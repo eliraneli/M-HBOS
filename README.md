@@ -1,4 +1,4 @@
-# WHBOS
+# HBOS Anomaly Detection
 In this project I focus on anomaly detection algorithms and specifically on the paper
 [“Histogram-based Outlier Score (HBOS)”] (https://www.researchgate.net/publication/231614824_Histogram-based_Outlier_Score_HBOS_A_fast_Unsupervised_Anomaly_Detection_Algorithm)https://www.researchgate.net/publication/231614824_Histogram-based_Outlier_Score_HBOS_A_fast_Unsupervised_Anomaly_Detection_Algorithm) for fast unsupervised anomaly detection by
 Markus Goldstein and Andreas Dengel.
@@ -10,10 +10,8 @@ density estimation. The histograms are then normalized such that the maximum hei
 This ensures an equal weight of each feature to the outlier score. Finally, the HBOS of every
 instance p is calculated using the corresponding height of the bins where the instance is
 located:
-"
-𝐻𝐵𝑂𝑆(𝑝) = ) log (ℎ𝑖𝑠𝑡1!(𝑝))
-"
-!#$
+$𝐻𝐵𝑂𝑆(𝑝) = \sum_{i=0}^n log(\frac{1}{hist_i(p)})}$
+
 One main advantage of HBOS is its linear computation time – introducing a big improvement
 compared to most other approaches. On the other hand, one main disadvantage in HBOS is
 that it can be sensitive to the bin width of the histogram. If the bins are too narrow, the normal
@@ -21,7 +19,7 @@ data points falling in these bins will be identified as outliers. If the bins ar
 fall into the bins of the normal data and be overlooked, in addition HBOS assumes that the
 features are independent which is usually not the case in the real-world scenario.
 
-# The Inovation
+# M-HBOS
 Following the above papers I have written a modified HBOS algorithm using initial PCA to
 reduce the dimensions/features as seen by the HBOS algorithm and thus making it easier for
 the HBOS to identify the anomalies. We have run this on 4 different datasets comparing the
