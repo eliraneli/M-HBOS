@@ -1,6 +1,6 @@
 # HBOS Anomaly Detection
-In this project I focus on anomaly detection algorithms and specifically on the paper
-[Histogram-based Outlier Score (HBOS)] (https://www.researchgate.net/publication/231614824_Histogram-based_Outlier_Score_HBOS_A_fast_Unsupervised_Anomaly_Detection_Algorithm) for fast unsupervised anomaly detection by
+In this project I focus on anomaly detection algorithms and specifically on the paper <a href="https://www.researchgate.net/publication/231614824_Histogram-based_Outlier_Score_HBOS_A_fast_Unsupervised_Anomaly_Detection_Algorithm" target="_blank">"Histogram-based Outlier Score (HBOS)"</a>
+[Histogram-based Outlier Score (HBOS)] () for fast unsupervised anomaly detection by
 Markus Goldstein and Andreas Dengel.
 
 The article presents an innovation of the HBOS method in which it offers two options of a static
