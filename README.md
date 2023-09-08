@@ -10,7 +10,7 @@ density estimation. The histograms are then normalized such that the maximum hei
 This ensures an equal weight of each feature to the outlier score. Finally, the HBOS of every
 instance p is calculated using the corresponding height of the bins where the instance is
 located:
-$𝐻𝐵𝑂𝑆(𝑝) = \sum_{i=0}^n log(\frac{1}{hist_i(p)})}$
+$𝐻𝐵𝑂𝑆(𝑝) = \sum_{i=0}_{n} log(\frac{1}{hist_i(p)})}$
 
 One main advantage of HBOS is its linear computation time – introducing a big improvement
 compared to most other approaches. On the other hand, one main disadvantage in HBOS is
